@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<title>军事动态2026-04-10</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;overflow-x:hidden}
+body{background:#0f172a;color:#e2e8f0;font-family:-apple-system,Microsoft YaHei,sans-serif}
+.w{max-width:100%;margin:0 auto;padding:12px}
+.hd{text-align:center;padding:12px 0 6px;border-bottom:1px solid #1e293b}
+.tt{font-size:18px;font-weight:700;color:#3b82f6}
+.dt{font-size:12px;color:#94a3b8;margin-top:2px}
+
+/* 悬浮视频播放器 */
+.vw{position:sticky;top:0;z-index:100;background:#000;width:100%;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.6);margin-bottom:10px;transition:all 0.3s ease}
+.vw video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000}
+
+/* 加载动画 */
+.ld{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border:3px solid rgba(59,130,246,0.3);border-top-color:#3b82f6;border-radius:50%;animation:spin 0.8s linear infinite;display:none;z-index:5}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.ld.on{display:block}
+
+/* 播放按钮 */
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(59,130,246,0.8);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;pointer-events:auto;transition:all 0.2s}
+.play svg{width:26px;height:26px;fill:#fff;margin-left:3px}
+
+/* 迷你模式 */
+.vw.mini{border-radius:8px;margin:0 8px;width:calc(100% - 16px)}
+.vw.mini video{aspect-ratio:16/9;border-radius:8px}
+.vw.mini .play{width:36px;height:36px}
+.vw.mini .play svg{width:16px;height:16px}
+
+/* 新闻列表 */
+.s{background:#1e293b;border-radius:10px;padding:12px 14px;margin-bottom:8px;border-left:4px solid #3b82f6}
+.t{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;background:#dc2626;color:#fff;margin-bottom:4px}
+.h{font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;line-height:1.4}
+.c{font-size:13px;color:#94a3b8;line-height:1.6}
+.ft{text-align:center;padding:12px 0;color:#475569;font-size:11px;border-top:1px solid #1e293b;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="hd"><div class="tt">全球军事动态</div><div class="dt">2026-04-10</div></div>
+<div class="vw" id="vp">
+<video id="v" playsinline webkit-playsinline x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-orientation="portraint" preload="metadata" controls poster="poster.webp">
+<source src="military_news_final.mp4" type="video/mp4">
+</video>
+<div class="ld" id="ld"></div>
+<div class="play" id="p" onclick="play()">
+<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+<div class="s"><span class="t">武装冲突</span><div class="h">被指在战争中被进一步边缘化 伊朗总统：愿为伊朗牺牲</div><div class="c">被指在战争中被进一步边缘化 伊朗总统：愿为伊朗牺牲<br>战争持续40天之际，伊朗与美国达成为期两周的停火协议。<br>特朗普在社交媒体宣布这一消息时，距离他自己设定的“最后期限”还剩不到两个小时的时间。</div></div><div class="s"><span class="t">军事动态</span><div class="h">美经济学家：所谓对伊开战有利美国经济十分荒谬</div><div class="c">美经济学家：所谓对伊开战有利美国经济十分荒谬<br>多位经济学家对美国政府近日提出的“一旦伊朗战事结束，<br>美国经济将迅速复苏”这一说法表示异议。专家认为，战事给美国经济带来的损害将长时间存在，<br>价格上涨可能持续数年。</div></div><div class="s"><span class="t">中东局势</span><div class="h">伊朗军方发言人称击落敌方一架先进战斗机</div><div class="c">伊朗军方发言人称击落敌方一架先进战斗机<br>伊朗军方发言人称击落敌方一架先进战斗机（资料图） 财联社4月9日电，<br>据伊朗学生通讯社9日报道，伊朗军方发言人称伊朗“击落了敌方所有先进战斗机中的<br>至少一架”。</div></div><div class="s"><span class="t">外交动态</span><div class="h">特朗普发文宣称：10项停战条款是“假新闻”</div><div class="c">特朗普发文宣称：10项停战条款是“假新闻”<br>美国总统特朗普8日在社交媒体上发文称，美国媒体发布了一份关于伊朗停火谈判的“<br>完全虚假的10项条款”，“其目的是诋毁参与和平进程的相关人员。</div></div><div class="s"><span class="t">俄乌前线</span><div class="h">泽连斯基：愿意与普京面谈 为了和平愿做任何事情</div><div class="c">泽连斯基：愿意与普京面谈 为了和平愿做任何事情<br>据央视新闻，俄罗斯国防部5日通报称，过去一天，俄军对148个区域的乌克兰武装<br>部队使用的军用机场、能源和燃料基础设施、固定翼无人机组装车间及乌克兰武装部队<br>和外国雇佣兵的临时部署地点实施了打击。</div></div><div class="s"><span class="t">中东局势</span><div class="h">以军将领承认：低估了真主党实力 伊朗政权依然稳固</div><div class="c">以军将领承认：低估了真主党实力 伊朗政权依然稳固<br>美国和以色列对伊朗发动军事打击4月5日进入第37天。<br>伊朗军方拒绝特朗普“48小时”通牒。美国和以色列当天对伊朗西南部马赫沙赫尔石<br>化经济特区的空袭已造成5人死亡、170人受伤。</div></div><div class="s"><span class="t">军事动态</span><div class="h">“发这个表情是有啥思想困惑？”钧正平：带兵人莫把朋友圈当“监视器”</div><div class="c">“发这个表情是有啥思想困惑？”钧正平：带兵人莫把朋友圈当“监视器”<br>@钧正平 4月9日评论，日前，中国军号刊发的一篇带兵骨干心得，引发了不少关注与讨论。<br>文中，这位带兵人反思自己过去总盯着战士们的朋友圈“找思想问题、查苗头隐患”，</div></div>
+<div class="ft">全球军事动态日报 | 当日实时搜索</div>
+</div>
+<script>
+var v=document.getElementById('v'),p=document.getElementById('p'),vp=document.getElementById('vp'),ld=document.getElementById('ld');
+var isWX=/micromessenger/i.test(navigator.userAgent);
+/* 微信浏览器静音自动播放 */
+if(isWX){
+  v.muted=true;
+  v.play().then(function(){
+    p.style.display='none';
+    function unmuteOnce(){v.muted=false;document.removeEventListener('click',unmuteOnce);document.removeEventListener('touchstart',unmuteOnce)}
+    document.addEventListener('click',unmuteOnce);
+    document.addEventListener('touchstart',unmuteOnce);
+  }).catch(function(){});
+}
+function play(){v.muted=false;v.play().then(function(){p.style.display='none'}).catch(function(){})}
+v.addEventListener('ended',function(){p.style.display='flex';ld.classList.remove('on')});
+v.addEventListener('pause',function(){p.style.display='flex';ld.classList.remove('on')});
+v.addEventListener('playing',function(){p.style.display='none';ld.classList.remove('on')});
+v.addEventListener('waiting',function(){ld.classList.add('on')});
+v.addEventListener('canplay',function(){ld.classList.remove('on')});
+
+/* 滚动后视频自动切换迷你模式 */
+var ticking=false;
+window.addEventListener('scroll',function(){
+  if(!ticking){requestAnimationFrame(function(){
+    if(window.scrollY>200){vp.classList.add('mini')}else{vp.classList.remove('mini')}
+    ticking=false;
+  });ticking=true}
+});
+</script>
+</body>
+</html>
